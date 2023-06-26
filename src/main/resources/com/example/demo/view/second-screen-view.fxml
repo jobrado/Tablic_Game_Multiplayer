@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="mainGridPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="897.0" style="-fx-background: #008B74" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.SecondScreenViewController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="370.0" minWidth="10.0" prefWidth="176.79999389648438" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="847.3333333333335" minWidth="10.0" prefWidth="552.8000061035157" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="304.66666666666663" minWidth="10.0" prefWidth="171.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="231.33333333333337" minWidth="0.0" prefWidth="0.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="310.3333740234375" minHeight="10.0" prefHeight="189.33333333333334" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="700.0000406901041" minHeight="10.0" prefHeight="535.6666666666666" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="237.00002034505212" minHeight="10.0" prefHeight="176.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <fx:include source="menubar.fxml" />
+
+        <GridPane GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <GridPane.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </GridPane.margin>
+            <children>
+                <ImageView fx:id="twoOne" fitHeight="120.0" fitWidth="89.0" onDragDropped="#setOnDragDropped" onDragOver="#setOnDragOver" onMouseClicked="#getCardValue" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 15, 0, 10, 0)" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                    <image>
+                        <Image url="@images/2_of_clubs.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="threeOne" fitHeight="120.0" fitWidth="89.0" onDragDropped="#setOnDragDropped" onDragOver="#setOnDragOver" onMouseClicked="#getCardValue" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 15, 0, 10, 0)" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                    <image>
+                        <Image url="@images/5_of_diamonds.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="twoTwo" fitHeight="120.0" fitWidth="89.0" onDragDropped="#setOnDragDropped" onDragOver="#setOnDragOver" onMouseClicked="#getCardValue" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 15, 0, 10, 0)" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                    <image>
+                        <Image url="@images/5_of_diamonds.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="threeTwo" fitHeight="120.0" fitWidth="89.0" onDragDropped="#setOnDragDropped" onDragOver="#setOnDragOver" onMouseClicked="#getCardValue" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 15, 0, 10, 0)" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                    <image>
+                        <Image url="@images/5_of_diamonds.png" />
+                    </image>
+                </ImageView>
+            <ImageView fx:id="zeroThree" fitHeight="120.0" fitWidth="89.0" onDragDropped="#setOnDragDropped" onDragOver="#setOnDragOver" onMouseClicked="#getCardValue" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 15, 0, 10, 0)" GridPane.rowIndex="3" />
+            <ImageView fx:id="oneZero" fitHeight="120.0" fitWidth="89.0" onDragDropped="#setOnDragDropped" onDragOver="#setOnDragOver" onMouseClicked="#getCardValue" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 15, 0, 10, 0)" GridPane.columnIndex="1" />
+            <ImageView fx:id="twoZero" fitHeight="120.0" fitWidth="89.0" onDragDropped="#setOnDragDropped" onDragOver="#setOnDragOver" onMouseClicked="#getCardValue" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 15, 0, 10, 0)" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+            <ImageView fx:id="threeZero" fitHeight="120.0" fitWidth="89.0" onDragDropped="#setOnDragDropped" onDragOver="#setOnDragOver" onMouseClicked="#getCardValue" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 15, 0, 10, 0)" GridPane.columnIndex="3" GridPane.halignment="CENTER" />
+            <ImageView fx:id="zeroOne" fitHeight="120.0" fitWidth="89.0" onDragDropped="#setOnDragDropped" onDragOver="#setOnDragOver" onMouseClicked="#getCardValue" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 15, 0, 10, 0)" GridPane.rowIndex="1" />
+            <ImageView fx:id="fourZero" fitHeight="120.0" fitWidth="89.0" onDragDropped="#setOnDragDropped" onDragOver="#setOnDragOver" onMouseClicked="#getCardValue" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 15, 0, 10, 0)" GridPane.columnIndex="4" />
+            <ImageView fx:id="oneOne" fitHeight="120.0" fitWidth="89.0" onDragDropped="#setOnDragDropped" onDragOver="#setOnDragOver" onMouseClicked="#getCardValue" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 15, 0, 10, 0)" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ImageView fx:id="oneTwo" fitHeight="120.0" fitWidth="89.0" onDragDropped="#setOnDragDropped" onDragOver="#setOnDragOver" onMouseClicked="#getCardValue" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 15, 0, 10, 0)" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <ImageView fx:id="zeroTwo" fitHeight="120.0" fitWidth="89.0" onDragDropped="#setOnDragDropped" onDragOver="#setOnDragOver" onMouseClicked="#getCardValue" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 15, 0, 10, 0)" GridPane.rowIndex="2" />
+            <ImageView fx:id="fiveOne" fitHeight="120.0" fitWidth="89.0" onDragDropped="#setOnDragDropped" onDragOver="#setOnDragOver" onMouseClicked="#getCardValue" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 15, 0, 10, 0)" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <ImageView fx:id="fourOne" fitHeight="120.0" fitWidth="89.0" onDragDropped="#setOnDragDropped" onDragOver="#setOnDragOver" onMouseClicked="#getCardValue" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 15, 0, 10, 0)" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <ImageView fx:id="fourTwo" fitHeight="120.0" fitWidth="89.0" onDragDropped="#setOnDragDropped" onDragOver="#setOnDragOver" onMouseClicked="#getCardValue" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 15, 0, 10, 0)" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <ImageView fx:id="fiveTwo" fitHeight="120.0" fitWidth="89.0" onDragDropped="#setOnDragDropped" onDragOver="#setOnDragOver" onMouseClicked="#getCardValue" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 15, 0, 10, 0)" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <ImageView fx:id="zeroZero" fitHeight="120.0" fitWidth="89.0" onDragDropped="#setOnDragDropped" onDragOver="#setOnDragOver" onMouseClicked="#getCardValue" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 15, 0, 10, 0)" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <ImageView fx:id="fourThree" fitHeight="120.0" fitWidth="89.0" onDragDropped="#setOnDragDropped" onDragOver="#setOnDragOver" onMouseClicked="#getCardValue" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 15, 0, 10, 0)" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <ImageView fx:id="threeThree" fitHeight="120.0" fitWidth="89.0" onDragDropped="#setOnDragDropped" onDragOver="#setOnDragOver" onMouseClicked="#getCardValue" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 15, 0, 10, 0)" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <ImageView fx:id="oneThree" fitHeight="120.0" fitWidth="89.0" onDragDropped="#setOnDragDropped" onDragOver="#setOnDragOver" onMouseClicked="#getCardValue" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 15, 0, 10, 0)" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <ImageView fx:id="twoThree" fitHeight="120.0" fitWidth="89.0" onDragDropped="#setOnDragDropped" onDragOver="#setOnDragOver" onMouseClicked="#getCardValue" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 15, 0, 10, 0)" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <ImageView fx:id="fiveThree" fitHeight="120.0" fitWidth="89.0" onDragDropped="#setOnDragDropped" onDragOver="#setOnDragOver" onMouseClicked="#getCardValue" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 15, 0, 10, 0)" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            </children>
+        </GridPane>
+        <ImageView fx:id="imgDeckOfCards" fitHeight="120.0" fitWidth="111.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 15, 0, 10, 0)" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <image>
+                <Image url="@images/SeekPng.com_playing-card-back-png_1215767.png" />
+            </image>
+            <GridPane.margin>
+                <Insets top="30.0" />
+            </GridPane.margin>
+        </ImageView>
+        <ImageView fx:id="cardPlaceholder1" fitHeight="120.0" fitWidth="129.0" onDragDetected="#setOnDragDetected" onDragDone="#setOnDragDone" onMouseClicked="#pickUpCardsOffTheTable" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 15, 0, 10, 0)" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <GridPane.margin>
+                <Insets left="-120.0" />
+            </GridPane.margin>
+         <image>
+            <Image url="@images/2_of_clubs.png" />
+         </image>
+        </ImageView>
+        <ImageView fx:id="cardPlaceholder2" fitHeight="120.0" fitWidth="200.0" onDragDetected="#setOnDragDetected" onDragDone="#setOnDragDone" onMouseClicked="#pickUpCardsOffTheTable" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 15, 0, 10, 0)" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+            <image>
+                <Image url="@images/8_of_diamonds.png" />
+            </image>
+            <GridPane.margin>
+                <Insets left="-80.0" />
+            </GridPane.margin>
+        </ImageView>
+        <ImageView fx:id="cardPlaceholder3" fitHeight="120.0" fitWidth="200.0" onDragDetected="#setOnDragDetected" onDragDone="#setOnDragDone" onMouseClicked="#pickUpCardsOffTheTable" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 15, 0, 10, 0)" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+            <GridPane.margin>
+                <Insets left="-40.0" />
+            </GridPane.margin>
+            <image>
+                <Image url="@images/jack_of_hearts2.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="cardPlaceholder4" fitHeight="120.0" fitWidth="200.0" onDragDetected="#setOnDragDetected" onDragDone="#setOnDragDone" onMouseClicked="#pickUpCardsOffTheTable" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 15, 0, 10, 0)" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <image>
+                <Image url="@images/3_of_hearts.png" />
+            </image>
+            <GridPane.margin>
+                <Insets />
+            </GridPane.margin>
+        </ImageView>
+        <ImageView fx:id="cardPlaceholder5" fitHeight="120.0" fitWidth="129.0" onDragDetected="#setOnDragDetected" onDragDone="#setOnDragDone" onMouseClicked="#pickUpCardsOffTheTable" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 15, 0, 10, 0)" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <image>
+                <Image url="@images/2_of_clubs.png" />
+            </image>
+            <GridPane.margin>
+                <Insets left="40.0" />
+            </GridPane.margin>
+        </ImageView>
+        <ImageView fx:id="cardPlaceholder6" fitHeight="120.0" fitWidth="129.0" onDragDetected="#setOnDragDetected" onDragDone="#setOnDragDone" onMouseClicked="#pickUpCardsOffTheTable" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 15, 0, 10, 0)" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <image>
+                <Image url="@images/2_of_clubs.png" />
+            </image>
+            <GridPane.margin>
+                <Insets left="80.0" />
+            </GridPane.margin>
+        </ImageView>
+        <ImageView fx:id="playerTwoCardPlaceholder1" fitHeight="120.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 15, 0, 10, 0)" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+            <image>
+                <Image url="@images/SeekPng.com_playing-card-back-png_1215767.png" />
+            </image>
+            <GridPane.margin>
+                <Insets left="-120.0" top="20.0" />
+            </GridPane.margin>
+        </ImageView>
+        <ImageView fx:id="playerTwoCardPlaceholder2" fitHeight="120.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 15, 0, 10, 0)" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+            <image>
+                <Image url="@images/SeekPng.com_playing-card-back-png_1215767.png" />
+            </image>
+            <GridPane.margin>
+                <Insets left="-80.0" top="20.0" />
+            </GridPane.margin>
+        </ImageView>
+        <ImageView fx:id="playerTwoCardPlaceholder3" fitHeight="120.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 15, 0, 10, 0)" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+            <image>
+                <Image url="@images/SeekPng.com_playing-card-back-png_1215767.png" />
+            </image>
+            <GridPane.margin>
+                <Insets left="-40.0" top="20.0" />
+            </GridPane.margin>
+        </ImageView>
+        <ImageView fx:id="playerTwoCardPlaceholder4" fitHeight="120.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 15, 0, 10, 0)" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+            <image>
+                <Image url="@images/SeekPng.com_playing-card-back-png_1215767.png" />
+            </image>
+            <GridPane.margin>
+                <Insets top="20.0" />
+            </GridPane.margin>
+        </ImageView>
+        <ImageView fx:id="playerTwoCardPlaceholder5" fitHeight="120.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 15, 0, 10, 0)" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+            <image>
+                <Image url="@images/SeekPng.com_playing-card-back-png_1215767.png" />
+            </image>
+            <GridPane.margin>
+                <Insets left="40.0" top="20.0" />
+            </GridPane.margin>
+        </ImageView>
+        <ImageView fx:id="playerTwoCardPlaceholder6" fitHeight="120.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 15, 0, 10, 0)" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+            <image>
+                <Image url="@images/SeekPng.com_playing-card-back-png_1215767.png" />
+            </image>
+            <GridPane.margin>
+                <Insets left="80.0" top="20.0" />
+            </GridPane.margin>
+        </ImageView>
+        <Label fx:id="playerTwoNameLabel" text="Player 3" textFill="#1f0f67" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="playerOneNameLabel" text="Player 1" textFill="#1f0f67" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+      <Button mnemonicParsing="false" onAction="#resetCurrentHand" prefHeight="8.0" prefWidth="67.0" text="Restart Hand" textFill="#4b1486" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+         <GridPane.margin>
+            <Insets bottom="2.0" />
+         </GridPane.margin>
+         <font>
+            <Font size="9.0" />
+         </font></Button>
+      <Button fx:id="btnNextPlayer" mnemonicParsing="false" onAction="#otherPlayerPlays" prefHeight="3.0" prefWidth="29.0" text="&lt;-" textFill="#4b1486" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets left="140.0" />
+         </GridPane.margin>
+      </Button>
+      <TextArea fx:id="taMessageHistory" editable="false" prefHeight="431.0" prefWidth="79.0" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="20.0" left="10.0" right="10.0" top="55.0" />
+         </GridPane.margin>
+      </TextArea>
+      <TextField fx:id="tfSendMessage" GridPane.rowIndex="2" GridPane.valignment="TOP">
+         <GridPane.margin>
+            <Insets left="10.0" right="10.0" />
+         </GridPane.margin>
+      </TextField>
+      <Button fx:id="btnSendMessage" mnemonicParsing="false" onAction="#SendMessage" text="Send" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets bottom="60.0" />
+         </GridPane.margin>
+      </Button>
+    </children>
+</GridPane>
